@@ -65,4 +65,4 @@ app.post('/', bodyParser.json(), async (req, res) => {
   res.json({ Data: yaml })
 })
 
-app.listen(3000)
+app.listen(process.env.PLUGIN_PORT || 3000)
